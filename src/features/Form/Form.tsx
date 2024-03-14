@@ -241,6 +241,7 @@ export const Form: FC<FormProps> = ({ variant }) => {
               onFocus={() => setCalendarActive(true)}
               placeholder={capitalize(staticData?.forms.date) || "Date"}
               onChange={handleChange}
+              readOnly
             />
             <Calendar
               calendarActive={calendarActive}
